@@ -22,6 +22,8 @@ import (
 	"os"
 
 	"github.com/gadgetry-io/supply/cmd/configure"
+	"github.com/gadgetry-io/supply/cmd/guide"
+	"github.com/gadgetry-io/supply/cmd/project"
 	"github.com/gadgetry-io/supply/cmd/version"
 
 	"github.com/spf13/cobra"
@@ -83,6 +85,8 @@ func init() {
 
 	// Add Command Packages Here
 	rootCmd.AddCommand(configure.Cmd)
+	rootCmd.AddCommand(guide.Cmd)
+	rootCmd.AddCommand(project.Cmd)
 	rootCmd.AddCommand(version.Cmd)
 
 	// Here you will define your flags and configuration settings.

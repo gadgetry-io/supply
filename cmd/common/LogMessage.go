@@ -44,8 +44,14 @@ func LogMessage(format string, message string) {
 		log.Printf(fmt.Sprintf(aurora.BrightGreen("PASS: %v").String(), message))
 	case "fail":
 		log.Printf(fmt.Sprintf(aurora.BrightRed("FAIL: %v").String(), message))
+	case "default":
+		log.Printf(fmt.Sprintf(aurora.BrightCyan("DEFAULT: %v").String(), message))
 	case "success":
 		log.Printf(fmt.Sprintf(aurora.BrightGreen("SUCCESS: %v").String(), message))
+	case "warning":
+		log.Printf(fmt.Sprintf(aurora.BrightYellow("WARNING: %v").String(), message))
+	case "failure":
+		log.Printf(fmt.Sprintf(aurora.BrightRed("FAILURE: %v").String(), message))
 	case "error":
 		log.Printf(fmt.Sprintf(aurora.BrightRed("ERROR: %v").String(), message))
 	case "fatal":
