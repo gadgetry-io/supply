@@ -8,19 +8,130 @@ supply
 It is a utility that our practitioners have designed to support our day-to-day work with the patterns 
 we use to solve commonly occurring problems with Cloud Architecture, Infrastructure as Code, and DevOps Automation.
 
-
 *SUPPLY*
-
-	supply (noun)
-	- the provisions and equipment necessary for people engaged in a particular project
-    - the quantity or amount of a commodity that is needed or available
 
 	supply (verb)
 	- to make available for use
 	- to provide what is needed or wanted
     - to furnish; to equip
 
-SUPPLY uses "packages" as a way to programmatically interact with patterns in variety of contexts:
+	supply (noun)
+	- the provisions necessary for a particular project
+
+## Architecture
+
+*API*
+
+*CLI*
+
+*WEB*
+
+## Terminology
+
+*BLUEPRINT*
+
+    blueprint (noun)
+    - a guide for making something
+    - a pattern or design that can be followed
+
+*PATTERN*
+
+    pattern (noun)
+    - something designed or used as a model for making things
+
+*CONSTRUCT*
+
+    construct (verb)
+    - to make or form by combining or arranging parts or elements
+    - to build something according to a set of instructions or rules
+
+    construct (noun)
+    - a thing which is deliberately built or formed
+
+    NOTES:
+    A construct is the basic building block
+    A construct encapsulates everything needed to create a component of a solution
+
+*COMPONENT*
+
+    component (noun)
+    - a part or element of a larger whole
+
+    component (adjective)
+    - constituting part of a larger whole
+    - a constituent.
+    
+    NOTES:
+    A component is an identifiable part of a larger program or construction
+    A component provides a particular resource, service, stack, function or group of related functions
+
+*STACK*
+
+    stack (noun)
+    - a collection of resources that you can manage as a single unit (e.g. CloudFormation Stack)
+
+*SOLUTION*
+
+    solution (noun)
+    - a means of solving a problem
+    - an action or process of solving a problem
+    - a product or service designed to meet a particular need
+    - a correct answer to a problem, puzzle
+
+*LIBRARY*
+
+    library (noun)
+    - a collection of blueprints, solutions, and patterns 
+
+*PROJECT*
+
+    project (verb)
+    - to devise in the mind (design)
+    - to put or set forth
+
+    project (noun)
+    - a specific plan or design
+
+*COMPOSITION*
+
+    composition (noun)
+    - the nature of something's constituents
+    - the way in which a whole or solution is made up
+
+    NOTES:
+    - A high-level construct can be composed from any number of lower-level construct
+    - A composition of constructs means that you can define reusable components and share them like any other code.
+
+*COMPOSE*
+
+    compose (verb)
+    - to form by putting together
+
+## USAGE
+
+* SUPPLY uses *"blueprints"* as a way to programmatically interact with solution patterns in variety of contexts:
+* SUPPLY uses *"constructs"* as a way to programmatically interact with components
+* SUPPLY composes *"constructs"* as components of a larger solution
+
+*supply init*
+This command initializes a new project via blueprint
+
+*supply create*
+This command creates a new blueprint, construct, 
+
+*supply build*
+This command runs the build command specified
+
+*supply compose*
+This command is used to compose a new blueprint / construct
+
+*supply deploy*
+
+*supply delete*
+This command deletes a construct from 
+
+
+
 
 ### USAGE:
 

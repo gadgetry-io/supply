@@ -17,8 +17,15 @@ limitations under the License.
 
 package main
 
-import "github.com/gadgetry-io/supply/cmd"
+import (
+	"os"
+
+	"github.com/gadgetry-io/supply/log"
+)
 
 func main() {
-	cmd.Execute()
+	if err := rootCmd.Execute(); err != nil {
+		log.Error(err)
+		os.Exit(1)
+	}
 }
